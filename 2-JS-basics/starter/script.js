@@ -90,8 +90,10 @@ console.log(typeof x);
 
 /*****************************
  *  Operator precedence
- */
+******************************
+*/
 
+/********
  var now = 2018;
  var yearJohn = 1989;
  var fullAge = 18;
@@ -119,3 +121,26 @@ console.log(typeof x);
  console.log(x);
  x--;
  console.log(x);
+*/
+/**************************************
+* Coding Challenge 1
+* it worked, I used prompt to collect user input from the keyboard
+* test data is in the comments but I left the prompt for flexibilty
+***************************************
+
+var bmiMark, bmiJohn, heightJohn, heightMark, massMark, massJohn;
+
+heightMark = prompt('Enter Mark\'s height in meters '); // meters 1.78
+massMark = prompt('Enter Mark\'s mass in kiligrams'); // kilograms 183.7
+heightJohn = prompt('Enter John\'s height in meters '); // meters 1.88
+massJohn =  prompt('Enter John\'s mass in kilograms'); // kilograms 175.5
+
+bmiMark = massMark / (heightMark * heightMark);
+bmiJohn = massJohn / (heightJohn * heightJohn);
+
+console.log("Mark's BMI is = " + bmiMark);
+console.log('John\'s BMI is = ' + bmiJohn);
+
+var isBmiGreater = bmiMark > bmiJohn;
+console.log('Is Mark\'s BMI greater than John\'s? ' + isBmiGreater);
+*/
